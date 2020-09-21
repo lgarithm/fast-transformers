@@ -58,42 +58,42 @@ def get_extensions():
             sources=[
                 "fast_transformers/hashing/hash_cpu.cpp"
             ],
-            extra_compile_args=["-fopenmp", "-ffast-math"]
+            extra_compile_args=["-ffast-math"]
         ),
         CppExtension(
             "fast_transformers.aggregate.aggregate_cpu",
             sources=[
-               "fast_transformers/aggregate/aggregate_cpu.cpp" 
+               "fast_transformers/aggregate/aggregate_cpu.cpp"
             ],
-            extra_compile_args=["-fopenmp", "-ffast-math"]
+            extra_compile_args=["-ffast-math"]
         ),
         CppExtension(
             "fast_transformers.clustering.hamming.cluster_cpu",
             sources=[
                "fast_transformers/clustering/hamming/cluster_cpu.cpp"
             ],
-            extra_compile_args=["-fopenmp", "-ffast-math"]
+            extra_compile_args=["-ffast-math"]
         ),
         CppExtension(
             "fast_transformers.sparse_product.sparse_product_cpu",
             sources=[
                 "fast_transformers/sparse_product/sparse_product_cpu.cpp"
             ],
-            extra_compile_args=["-fopenmp", "-ffast-math"]
+            extra_compile_args=["-ffast-math"]
         ),
         CppExtension(
             "fast_transformers.sparse_product.clustered_sparse_product_cpu",
             sources=[
                 "fast_transformers/sparse_product/clustered_sparse_product_cpu.cpp"
             ],
-            extra_compile_args=["-fopenmp", "-ffast-math"]
+            extra_compile_args=["-ffast-math"]
         ),
         CppExtension(
             "fast_transformers.causal_product.causal_product_cpu",
             sources=[
                 "fast_transformers/causal_product/causal_product_cpu.cpp"
             ],
-            extra_compile_args=["-fopenmp", "-ffast-math"]
+            extra_compile_args=["-ffast-math"]
         )
     ]
     if cuda_toolkit_available():
