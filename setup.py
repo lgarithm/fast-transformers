@@ -177,7 +177,7 @@ def setup_package():
         ],
         packages=find_packages(exclude=["docs", "tests", "scripts", "examples"]),
         ext_modules=get_extensions(),
-        cmdclass={"build_ext": BuildExtension},
+        cmdclass={"build_ext": BuildExtension.with_options(use_ninja=False)},
         install_requires=["torch"]
     )
 
